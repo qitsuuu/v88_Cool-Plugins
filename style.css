@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: 1ps solid salmon;
+}
+div.container{
+    margin: 0 auto;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+header{
+    padding: 20px 50px;
+    background-color: rgb(255, 212, 132);
+}
+header p{
+    font-style: italic;
+}
+header span{
+    font-weight: bold;
+    color: rgb(6, 6, 168)
+}
+
+.gallery{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+div .lightboxed{
+    border: 2px solid rgb(202, 177, 129);
+    border-radius: 3px;
+    height: 160px;
+    width: calc(100%/12*2.96);
+    object-fit: contain;
+    background-color: rgba(153, 122, 65, 0.3);
+}
+
+ul.jtimeline-events li{
+    font-size: 14px;
+}
+
+    .jtimeline ul.jtimeline-events > li.jtimeline-event:hover > .jtimeline-event-bullet, .jtimeline ul.jtimeline-events > li.jtimeline-event.is-done > .jtimeline-event-bullet {
+        border-color: orange;
+        background-color: orange;
+    }
+    .jtimeline ul.jtimeline-events > li.jtimeline-event:hover > .jtimeline-event-label:after, .jtimeline ul.jtimeline-events > li.jtimeline-event.is-done > .jtimeline-event-label:after {
+        background-color: orange;
+    }
+
+
+footer{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    color: rgb(226, 148, 2);
+}

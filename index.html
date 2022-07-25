@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <title>Cool Plugins by Qit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="\horizontal-scrollable-timeline\jtimeline.css">
+    <link rel="stylesheet" href="\fullscreen-lightbox-gallery\js\lightboxed\lightboxed.css">
+    <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src=".\horizontal-scrollable-timeline\jtimeline.js"></script>
+    <script src="\fullscreen-lightbox-gallery\js\lightboxed\lightboxed.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#jtimeline-demo').jTimeline({
+                // pixels per second
+                resolution: 50000,
+                // minimum spacing between events
+                minimumSpacing: 200,
+                // scrolling (translateX) step size
+                step: 200,
+                // character for left arrow
+                leftArrow: "&larr;",
+                // character for right arrow
+                rightArrow: "&rarr;",
+            });
+        });
+    </script>
+    </head>
+    <body>
+    <div class="container">
+        <header>
+            <h1>Learn by Doing</h1>
+            <p>Greatest takeaway from <span>Village88</span></p>
+        </header>
+        <div id="jtimeline-demo" class="jtimeline">
+            <ul class="jtimeline-events">
+                <li class="jtimeline-event is-active" data-timestamp="1656892800">
+                    July 4th 2022<br />
+                    First day at Village 88
+                </li>
+                <li class="jtimeline-event" data-timestamp="1657065600">
+                    July 6th 2022<br />
+                    Building Blocks
+
+                </li>
+                <li class="jtimeline-event" data-timestamp="1657144800">
+                    July 7th 2022<br />
+                    HTML/CSS Calendar
+
+                </li>
+                <li class="jtimeline-event" data-timestamp="1657231200">
+                    July 8th 2022<br />
+                    Ivana's Resume
+                </li>
+                <li class="jtimeline-event" data-timestamp="1657404000">
+                    July Week2 2022<br />
+                    Many things transpired!
+                </li>
+                <li class="jtimeline-event" data-timestamp="1657749600">
+                    July 14th 2022<br />
+                    Finished Can I use
+                </li>
+                <li class="jtimeline-event" data-timestamp="1658088000">
+                    July 18th 2022<br />
+                    Passed the Exam
+                </li>
+                <li class="jtimeline-event" data-timestamp="1658613600">
+                    July 24th 2022<br />
+                    Nailed Kanban Board!
+                </li>
+                <li class="jtimeline-event is-done" data-timestamp="1658790000">
+                    July 26th 2022<br />
+                    Finished Web Fundamentals
+                </li>
+            </ul>
+        </div>
+        
+        <div class="gallery">
+            <img class="lightboxed" rel="group1" src="assets\tdiag.jpg"/>
+            <img class="lightboxed" rel="group1" src="assets\orientation.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\mchoi.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\blocks.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\calendar.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\campers.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\caniuse.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\python.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\php.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\resume.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\ebay.jpg" />
+            <img class="lightboxed" rel="group1" src="assets\abenson.jpg"/>
+            <img class="lightboxed" rel="group1" src="assets\exam.jpg"/>
+            <img class="lightboxed" rel="group1" src="assets\kanban.jpg"/>
+            <img class="lightboxed" rel="group1" src="assets\sql.jpg"/>
+            <img class="lightboxed" rel="group1" src="assets\erd.jpg"/>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/qitsuuu">Qit Villorante</a>- 2022
+    </footer>
+    </body>
+</html>
